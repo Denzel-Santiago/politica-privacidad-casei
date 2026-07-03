@@ -1,0 +1,532 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Página para solicitar la eliminación de una cuenta y de los datos personales asociados a la aplicación CASEI Tutorías."
+  >
+
+  <title>Eliminación de cuenta y datos | CASEI Tutorías</title>
+
+  <style>
+    :root {
+      --primary: #174ea6;
+      --primary-dark: #123b7a;
+      --background: #f5f7fb;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --border: #dbe2ea;
+      --warning-background: #fff8e1;
+      --warning-border: #f4c542;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 42px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.2;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    main {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 32px auto;
+    }
+
+    section {
+      margin-bottom: 24px;
+      padding: 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--primary-dark);
+      font-size: 1.45rem;
+    }
+
+    h3 {
+      color: var(--primary-dark);
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--primary-dark);
+    }
+
+    .app-information {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 8px 16px;
+      margin: 0;
+    }
+
+    .app-information dt {
+      font-weight: bold;
+    }
+
+    .app-information dd {
+      margin: 0;
+    }
+
+    .email-box {
+      margin: 20px 0;
+      padding: 20px;
+      background: #eef4ff;
+      border-left: 5px solid var(--primary);
+      border-radius: 8px;
+    }
+
+    .email-box p {
+      margin: 6px 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 20px;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--primary-dark);
+      color: #ffffff;
+    }
+
+    .warning {
+      padding: 20px;
+      background: var(--warning-background);
+      border-left: 5px solid var(--warning-border);
+      border-radius: 8px;
+    }
+
+    .warning strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      padding: 28px 20px;
+      background: #e9eef5;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 32px 18px;
+      }
+
+      main {
+        width: min(calc(100% - 20px), var(--max-width));
+        margin: 20px auto;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      .app-information {
+        display: block;
+      }
+
+      .app-information dt {
+        margin-top: 12px;
+      }
+
+      .app-information dd {
+        margin-top: 2px;
+      }
+
+      .button {
+        display: block;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Eliminación de cuenta y datos de usuario</h1>
+
+    <p>
+      Información para solicitar la eliminación de una cuenta de
+      CASEI Tutorías y de los datos personales asociados.
+    </p>
+  </header>
+
+  <main>
+    <section aria-labelledby="informacion-aplicacion">
+      <h2 id="informacion-aplicacion">
+        Información de la aplicación
+      </h2>
+
+      <dl class="app-information">
+        <dt>Aplicación:</dt>
+        <dd>CASEI Tutorías</dd>
+
+        <dt>Responsable:</dt>
+        <dd>Denzel Enrique Santiago Zepeda</dd>
+
+        <dt>Correo de contacto:</dt>
+        <dd>
+          <a href="mailto:enriquesantiago117@gmail.com">
+            enriquesantiago117@gmail.com
+          </a>
+        </dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="solicitar-eliminacion">
+      <h2 id="solicitar-eliminacion">
+        Cómo solicitar la eliminación
+      </h2>
+
+      <p>
+        Puedes solicitar la eliminación de tu cuenta y de los datos
+        personales asociados enviando un correo electrónico a:
+      </p>
+
+      <div class="email-box">
+        <p>
+          <strong>Correo:</strong>
+          <a href="mailto:enriquesantiago117@gmail.com">
+            enriquesantiago117@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Asunto:</strong>
+          Solicitud de eliminación de cuenta de CASEI Tutorías
+        </p>
+
+        <a
+          class="button"
+          href="mailto:enriquesantiago117@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20de%20CASEI%20Tutor%C3%ADas"
+        >
+          Enviar solicitud por correo
+        </a>
+      </div>
+
+      <p>
+        Incluye únicamente la siguiente información en tu solicitud:
+      </p>
+
+      <ul>
+        <li>Nombre completo.</li>
+
+        <li>
+          Correo electrónico asociado a la cuenta.
+        </li>
+
+        <li>
+          Matrícula o identificador institucional, cuando corresponda.
+        </li>
+
+        <li>
+          Rol dentro de la plataforma: estudiante, tutor, docente,
+          director, encargado o administrador.
+        </li>
+
+        <li>
+          Confirmación expresa de que deseas eliminar tu cuenta y los
+          datos personales asociados.
+        </li>
+      </ul>
+
+      <div class="warning">
+        <strong>Importante:</strong>
+
+        No envíes tu contraseña. CASEI Tutorías nunca solicitará
+        contraseñas, códigos de autenticación ni datos bancarios por
+        correo electrónico.
+      </div>
+    </section>
+
+    <section aria-labelledby="solicitud-app">
+      <h2 id="solicitud-app">
+        Solicitud desde la aplicación
+      </h2>
+
+      <p>
+        Cuando esta opción se encuentre disponible dentro de CASEI
+        Tutorías, podrás iniciar la solicitud desde el apartado de
+        cuenta, perfil, soporte o privacidad.
+      </p>
+
+      <p>
+        La solicitud deberá confirmar expresamente que deseas eliminar
+        tu cuenta y los datos personales asociados.
+      </p>
+
+      <p>
+        Si la opción interna no se encuentra disponible, puedes realizar
+        la solicitud mediante el correo de contacto indicado en esta
+        página.
+      </p>
+    </section>
+
+    <section aria-labelledby="verificacion">
+      <h2 id="verificacion">
+        Proceso de verificación
+      </h2>
+
+      <p>
+        Para proteger la cuenta y evitar eliminaciones no autorizadas,
+        podremos solicitar información adicional que permita confirmar
+        la identidad del titular.
+      </p>
+
+      <p>
+        La solicitud deberá enviarse preferentemente desde el mismo
+        correo electrónico vinculado con la cuenta.
+      </p>
+
+      <p>
+        Una vez verificada la identidad, procederemos a eliminar la
+        cuenta y los datos personales asociados de nuestros sistemas y
+        proveedores de servicio, de acuerdo con los tiempos técnicos
+        necesarios para completar el proceso.
+      </p>
+    </section>
+
+    <section aria-labelledby="datos-eliminados">
+      <h2 id="datos-eliminados">
+        Datos que se eliminarán
+      </h2>
+
+      <p>
+        Dependiendo de la información asociada a la cuenta, la
+        eliminación podrá incluir:
+      </p>
+
+      <ul>
+        <li>Datos de identificación y perfil.</li>
+
+        <li>
+          Nombre, correo electrónico, matrícula o identificadores
+          institucionales.
+        </li>
+
+        <li>
+          Identificadores de usuario y datos relacionados con la
+          autenticación.
+        </li>
+
+        <li>
+          Fotografías, documentos o archivos proporcionados por el
+          usuario.
+        </li>
+
+        <li>
+          Información académica vinculada con la cuenta.
+        </li>
+
+        <li>
+          Información relacionada con tutorías, asesorías, asistencia,
+          actividades o seguimiento académico.
+        </li>
+
+        <li>
+          Datos generados mediante el uso de CASEI Tutorías.
+        </li>
+
+        <li>
+          Tokens de dispositivo asociados con las notificaciones push.
+        </li>
+
+        <li>
+          Datos almacenados localmente en la aplicación cuando
+          corresponda, incluyendo información del baúl seguro cuando se
+          ejecute un borrado local o remoto.
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="datos-conservados">
+      <h2 id="datos-conservados">
+        Información que podría conservarse
+      </h2>
+
+      <p>
+        Podremos conservar determinada información únicamente cuando
+        exista una razón legal, técnica, institucional o de seguridad
+        que lo justifique, por ejemplo:
+      </p>
+
+      <ul>
+        <li>
+          Registros requeridos por obligaciones académicas,
+          administrativas o institucionales.
+        </li>
+
+        <li>
+          Evidencia necesaria para atender reportes, auditorías,
+          aclaraciones o requerimientos de cumplimiento normativo.
+        </li>
+
+        <li>
+          Información agregada, estadística o anonimizada que no permita
+          identificar directamente al usuario.
+        </li>
+
+        <li>
+          Respaldos temporales de seguridad, hasta que sean reemplazados
+          o eliminados conforme a los ciclos técnicos correspondientes.
+        </li>
+
+        <li>
+          Registros mínimos necesarios para prevenir fraude, abuso,
+          accesos no autorizados o incidentes de seguridad.
+        </li>
+      </ul>
+
+      <p>
+        La información conservada se limitará a lo estrictamente
+        necesario y no se utilizará para finalidades distintas de las
+        indicadas.
+      </p>
+    </section>
+
+    <section aria-labelledby="tiempo-atencion">
+      <h2 id="tiempo-atencion">
+        Tiempo de atención
+      </h2>
+
+      <p>
+        La solicitud será revisada después de recibirse y de validarse
+        la identidad del solicitante.
+      </p>
+
+      <p>
+        El proceso de eliminación se realizará en un plazo razonable,
+        considerando los tiempos técnicos necesarios para retirar la
+        información de los sistemas activos, respaldos y proveedores
+        relacionados.
+      </p>
+
+      <p>
+        Se enviará una confirmación al correo electrónico del solicitante
+        cuando el proceso haya concluido o cuando se requiera información
+        adicional.
+      </p>
+    </section>
+
+    <section aria-labelledby="seguridad-solicitud">
+      <h2 id="seguridad-solicitud">
+        Recomendaciones de seguridad
+      </h2>
+
+      <div class="warning">
+        <strong>No incluyas información sensible innecesaria.</strong>
+
+        No envíes contraseñas, códigos de autenticación, datos bancarios
+        completos, claves privadas ni documentos que no sean necesarios
+        para verificar la titularidad de la cuenta.
+      </div>
+    </section>
+
+    <section aria-labelledby="otras-politicas">
+      <h2 id="otras-politicas">
+        Aviso de privacidad
+      </h2>
+
+      <p>
+        Puedes consultar información adicional sobre el tratamiento de
+        datos personales en nuestro aviso de privacidad.
+      </p>
+
+      <p>
+        <a href="index.html">
+          Consultar el aviso de privacidad de CASEI Tutorías
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <strong>CASEI Tutorías</strong>
+    </p>
+
+    <p>
+      Responsable: Denzel Enrique Santiago Zepeda
+    </p>
+
+    <p>
+      Contacto:
+      <a href="mailto:enriquesantiago117@gmail.com">
+        enriquesantiago117@gmail.com
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
+```
